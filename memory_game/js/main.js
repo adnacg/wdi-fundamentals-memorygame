@@ -1,11 +1,19 @@
 var cards = ["queen" , "queen" , "king" , "king"];
-
 var cardsInPlay = [];
+var cardOne = cards[0];
+cardsInPlay.push(cardOne);
 
-var cardOne = "queen";
+console.log(cardOne);
 
-var cardTwo = "queen";
+var cardTwo = cards[1];
+cardsInPlay.push(cardTwo);
 
-var cardThree = "king";
+console.log(cardTwo);
 
-var cardFour = "king";
+if (cardsInPlay.length === 2) {
+	if (cardsInPlay[0] === cardsInPlay[1]) {
+		alert("YASSS"); 
+	} else {
+		alert("BOO");
+	}
+}
